@@ -1,0 +1,324 @@
+/* Font */
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+
+*
+{
+    margin: 0;
+    padding: 0;
+}
+
+ul
+{
+    list-style: none;
+}
+
+a
+{
+    color: black;
+    text-decoration: none;
+}
+
+body
+{
+    font-family: 'Raleway', sans-serif;
+}
+
+.nav
+{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 50px;
+    background: black;
+    color: white;
+}
+
+.nav-left
+{
+    padding-left: 13px;
+}
+
+
+.nav-left h1 a, .nav-right ul a
+{
+    color: white;
+}
+
+
+.nav-right ul
+{
+    display: flex;
+    gap: 20px;
+    padding-right: 13px;
+}
+
+.nav-right ul a:hover
+{
+    color: #b2e4ff;
+}
+
+/* ------------------------ Services ------------------------ */
+
+#services
+{
+    height: 100vh;
+}
+
+
+/* ------------------------ Footer ------------------------ */
+
+
+/* Base */
+footer
+{
+    /* width: 100%; */
+    background: black;
+    color: #fff;
+    border-radius: 50px 50px 0px 0px;
+    padding: 20px 3em;
+    margin-top: 8em;
+}
+
+
+/* Top of Footer */
+.footer-top img
+{
+    padding-top: 12px;
+    width: 240px;
+}
+
+.footer-top
+{
+    padding: 20px 20px;
+
+}
+
+
+
+
+
+/* Body of Footer */
+.footer-middle
+{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+}
+
+
+.footer-middle h3
+{
+    text-align: center;
+    padding-bottom: 13px;
+}
+
+
+
+/* Common */
+.footer-middle .footer-body-left a, 
+.footer-middle .footer-body-center a,
+.footer-middle .footer-body-right a
+{
+    padding-top: 7px;
+    text-align: left;
+    color: #fff;
+    text-decoration: none;
+}
+
+.footer-middle .footer-body-left a:hover, 
+.footer-middle .footer-body-right a:hover
+{
+    color: #b2e4ff;
+}
+
+
+
+
+/* Left */
+.footer-body-left
+{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding-left: 20px;
+}
+
+.footer-body-left .maps{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer-body-left .maps a{
+    margin: 10px;
+}
+
+
+/* Center */
+.links{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.links .fa-brands
+{
+    padding: 15px;
+    transition: all 0.3s;
+}
+.links .fa-brands:hover
+{
+    border-radius: 15px;
+}
+
+.fa-youtube
+{
+    background: #bb0000;
+}
+
+.fa-instagram
+{
+    background: #125688;
+}
+
+.fa-reddit
+{
+    background: #ff5700;
+}
+
+.fa-facebook
+{
+    background: #3B5998;
+}
+
+.fa-medium
+{
+    background: #000000;
+}
+
+.fa-github
+{
+    background: #0d1117;
+}
+
+.fa-youtube:hover, .fa-instagram:hover, .fa-facebook:hover
+{
+    opacity: 0.7;
+    color: #ffffff;
+}
+
+.fa-medium:hover, .fa-github:hover
+{
+    color: #000000;
+    background: #ffffff;
+}
+
+.footer-middle .footer-body-center .links a{
+    font-size: 30px;
+    width: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin: 5px 2px;
+    text-align: center;
+}
+
+
+/* Right */
+.footer-body-right{
+    width: 30%;
+}
+
+.footer-body-right form
+{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+    width: 100%;
+}
+
+.footer-body-right form input, .footer-body-right form textarea {
+	padding: 12px;
+	border: none;
+	border-radius: 8px;
+	margin: 10px 0px;
+	resize: none;
+	width: 100%;
+}
+
+.footer-body-right form button{
+    display: block;
+    width: 30%;
+}
+
+
+
+.footer-contact form
+{
+    width: 500px;
+    padding-right: 20px;
+    display: flex;
+    gap: 13px;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+.footer-contact form .footer-input
+{
+    width: 100%;
+    padding: 9px 10px;
+    border: none;
+    border-radius: 4px;
+    margin: 10px 0px 15px 0px;
+    font-family: 'Raleway', sans-serif;
+}
+
+.footer-input
+{
+    font-family: 'Raleway', sans-serif;
+}
+.footer-input:focus
+{
+    outline: none;
+    font-style: italic;
+}
+
+
+textarea
+{
+    font-family: 'Raleway', sans-serif;
+    outline: none;
+    resize: none;
+}
+textarea:focus
+{
+    font-style: italic;
+}
+
+
+
+
+.footer-body-left, .footer-body-center, .footer-body-right{
+    margin: 20px 3em;
+}
+
+
+
+
+/* Bottom of Footer */
+.foot-bottom
+{
+    width: 100%;
+    display: flex;
+    font-weight: 800;
+    justify-content: center;
+    align-items: center;
+    background: black;
+    padding: 15px;
+}
